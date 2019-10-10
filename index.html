@@ -6,42 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-
-  <div class="container">
-
-    <div class="card">
-      <div class="card-title">
-        <div class="date">
-            <span>Medellin</span>
-            <br>
-            <span>06/19/2010</span>
-         </div>
-         <div class="weather">
-           <span>icon</span>
-           <br>
-           <span>Rain</span>
-         </div>
-      </div>
-
-      <div class="card-content">
-        <span>temp</span>
-        <span>humidity</span>
-        <span>wind</span>
-        <button>change location</button>
 
 
 
-
-      </div>
-    </div>
-
-
-
+   
 
   </div>
-    
+
+  <div class="parent">
+    <div class="div1"> 
+
+      <div class="card">
+        <div class="card-title">
+  
+              <div class="city">
+                <span>Medellin</span>
+                <span id="temp">Temp</span>
+              </div>
+               <div class="weather">
+                 <img id="icon" src="" alt="" srcset="">
+                 
+                 <span id="main"></span>
+               </div>
+
+               <div class="weather">
+                 <span>Tomorrow</span>
+                  <img id="icon2" src="" alt="" srcset="">
+                 
+                  <span id="main"></span>
+
+
+               </div>
+  
+  
+  
+       
+        </div>
+  
+        <div class="card-content">
+          <span id="humidity">Humidity</span>
+          <span id="wind">Pressure</span>
+          <span id="tomorrow">Pressure</span>
+
+
+         
+          <button>change location</button>
+  
+  
+  
+  
+        </div>
+
+    </div>
+    </div>
+  </div>
 </body>
   <script src="./app.js"></script>
 

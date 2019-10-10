@@ -3,22 +3,26 @@ body{
     background: #9D50BB;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .container{
-    width: 50%;
+    border-radius: 15px;
+
+    width: 100%;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 5px;
     display: grid;
     grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-align-items: center;
-   align-self: center;
-   margin: auto
+    grid-auto-rows: auto;
+    margin: auto;
+    overflow: hidden;
+
+
+   
+   
     
 
 }
@@ -27,26 +31,86 @@ align-items: center;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
 
-    background: #FF4E50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #4b6cb7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
+border-radius: 10px;
+overflow: hidden;
 
 }
 
 .card-title{
     display: flex;
-    width: 50%;
-    background: #9D50BB;
-    justify-content: space-around;
-    align-content: space-between;
+    width: 100%;
+    
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=100");
+    background-size: 100% 100%;
+    background-blend-mode: overlay;
+    background: #4b6cb7;
+    
 }
+
+#temp{
+    font-size: 8vw;
+}
+
+
+
+.city{
+    display: flex;
+    flex-direction: column;
+    font-size: 5vw;
+    word-break: break-all;
+    color: aliceblue;
+    justify-content: space-between;
+
+}
+
+.weather{
+
+    display: flex;
+    flex-direction: column;
+        font-size: 5vw;
+        color: aliceblue;
+        border: 2px solid black;
+
+
+}
+
+
 
 .card-content{
   display: flex;
  flex-direction: column;
-
+width: 100%;
+font-size: 3vw;
+color: aliceblue;
+align-items: center;
 }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1px;
+    border-collapse: separate;
+    }
+    
+    .div1 { grid-area: 2 / 2 / 5 / 5; 
+        background: rgb(156, 149, 149);
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        box-shadow: 10px 21px 34px -19px rgba(0,0,0,0.75);
+
+
+    }
