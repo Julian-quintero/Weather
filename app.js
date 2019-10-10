@@ -28,16 +28,20 @@ async function render(){
       let data = await getweatherNow();
       let tomorrowWeather= await getweatherTomorrow();
       let icon = data.weather[0].icon;
-
+      let iconTomorrow = tomorrowWeather.list[5].weather[0].icon;
+      console.log(tomorrowWeather);
+      
      
       
   
 
 
       document.querySelector("#icon").src=`http://openweathermap.org/img/wn/${icon}@2x.png`;
-      document.querySelector("#icon2").src=`http://openweathermap.org/img/wn/${icon}@2x.png`;
+      document.querySelector("#icon2").src=`http://openweathermap.org/img/wn/${iconTomorrow}@2x.png`;
 
       document.querySelector("#main").innerHTML=data.weather[0].main;
+      document.querySelector("#descriptionTomorrow").innerHTML=tomorrowWeather.list[5].weather[0].main;
+
       document.querySelector("#humidity").innerHTML=`Humidity: ${data.main.humidity}%`;
       document.querySelector("#wind").innerHTML=`Wind: ${data.wind.speed} km/h`;
       document.querySelector("#temp").innerHTML=`${Math.round(data.main.temp-273.15)} ℃`;
