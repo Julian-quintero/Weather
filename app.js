@@ -44,11 +44,13 @@ async function render(){
 
       document.querySelector("#humidity").innerHTML=`Humidity: ${data.main.humidity}%`;
       document.querySelector("#wind").innerHTML=`Wind: ${data.wind.speed} km/h`;
-      document.querySelector("#temp").innerHTML=`${Math.round(data.main.temp-273.15)} ℃`;
+      document.querySelector("#temp").innerHTML=`${Math.round(data.main.temp-273.15)}℃`;
       document.querySelector("#tomorrow").innerHTML=`Humidity: ${tomorrowWeather.list[4].main.temp}%`;
 
+      document.querySelector(".loading").style.display="none";
 
-
+      document.querySelector(".parent").style.display="grid";
+     
 
 
 
@@ -60,16 +62,12 @@ async function render(){
 }   
 
 
+function loading() {
 
-
-function date() {
-
-    let dateDom=document.querySelector(".date");
-    dateDom.innerHTML=Date.now();
-   
-
+    document.querySelector(".parent").style.display="none";
     
 }
 
 
+loading();
 render();
