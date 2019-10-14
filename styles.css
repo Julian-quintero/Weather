@@ -79,11 +79,11 @@ overflow: hidden;
     font-size: 2vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: lemonchiffon;
     border-radius: 7px;
     box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+    justify-content: space-evenly;
 
     
 }
@@ -94,17 +94,30 @@ overflow: hidden;
 
     display: flex;
     flex-direction: column;
-        font-size: 5vw;
+        font-size: 3vw;
         color: aliceblue;
+        align-items: center;
+        justify-content: space-between;
 
 
 }
  #icon{
 
     display: block;
-    object-fit: cover;
+    width: 100%;
+    object-fit: fill;
+
+    
 }
 
+#icon2{
+
+    display: block;
+    height: 50%;
+    
+
+    
+}
 
 
 .card-content{
@@ -176,4 +189,9 @@ font-weight: bold;
     #button:hover {
         background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
         background-color:#053841;
+    }
+
+    .form{
+
+        display: none;
     }
