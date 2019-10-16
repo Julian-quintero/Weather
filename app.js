@@ -30,9 +30,10 @@ async function getweatherTomorrow(city="Bogota") {
 
 
 async function render(params){
- console.log(params.input.value);
  
-     
+    
+     loading();
+
 
       let data = await getweatherNow(params.input.value);
       let tomorrowWeather= await getweatherTomorrow(params.input.value);
@@ -52,13 +53,14 @@ async function render(params){
       document.querySelector("#pressure").innerHTML=`Pressure: ${data.main.pressure} hPa`;
 
       document.querySelector(".loading").style.display="none";
-
       document.querySelector(".parent").style.display="grid";
      
 
 
+      document.querySelector(".form").style.display="none";
 
-      
+      document.querySelector("#button").style.display="inline";
+
 
 
           
@@ -68,6 +70,8 @@ async function render(params){
 
 function loading() {
 
+    document.querySelector(".loading").style.display="block";
+
     document.querySelector(".parent").style.display="none";
     
 }
@@ -76,6 +80,7 @@ function showElements() {
 
     document.querySelector("#button").style.display="none";
     document.querySelector(".form").style.display="inline";
+
  }
 
 
