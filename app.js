@@ -10,20 +10,40 @@ var params= {
 
 async function getweatherNow(city="Bogota"){
     
-
+  try {
     let data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ff26273dd44b20d6f5a756205c13e775`);
+    
+    if (data.status !==200) {
+        alert("Please add a valid city");  
+        render(params);      
+            }
+    
     data = await data.json();
     let weather = await data;
+
+    
     return weather;
+      
+  } catch (error) {
+      
+  }
+   
       
 }
 
 async function getweatherTomorrow(city="Bogota") {
 
-    let data = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=ff26273dd44b20d6f5a756205c13e775`);
-    data = await data.json();
-    let weather = await data;
-    return weather;
+    try {
+        let data = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=ff26273dd44b20d6f5a756205c13e775`);
+        data = await data.json();
+        let weather = await data;
+        return weather;
+        
+    } catch (error) {
+        
+    }
+
+   
       
 }
 
@@ -39,8 +59,8 @@ async function render(params){
       let tomorrowWeather= await getweatherTomorrow(params.input.value);
       let icon = data.weather[0].icon;
       let iconTomorrow = tomorrowWeather.list[5].weather[0].icon;
-      console.log(data);
-      
+      document.querySelector("#cityName").innerHTML=`${params.input.value}`;
+
       document.querySelector("#icon").src=`./img/${icon}.svg`;
       document.querySelector("#icon2").src=`./img/${iconTomorrow}.svg`;
 
