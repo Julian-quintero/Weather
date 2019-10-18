@@ -1,42 +1,20 @@
 body{
 
-    background: #667db6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #667db6;  
+    background: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6);  
+    background: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6); 
     
 font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.container{
-    border-radius: 15px;
-
-    width: 100%;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: auto;
-    margin: auto;
-    overflow: hidden;
-
-
-   
-   
-    
-
-}
-
 .card{
-
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    background: #4b6cb7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #4b6cb7;  
+background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  
+background: linear-gradient(to right, #182848, #4b6cb7); 
 border: 2px solid black;
 border-radius: 10px;
 overflow: hidden;
