@@ -34,7 +34,7 @@ async function getweatherNow(city="Bogota"){
 async function getweatherTomorrow(city="Bogota") {
 
     try {
-        let data = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=ff26273dd44b20d6f5a756205c13e775`);
+        let data = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=ff26273dd44b20d6f5a756205c13e775`);
         data = await data.json();
         let weather = await data;
         return weather;
