@@ -1,46 +1,37 @@
 body{
-
     background: #667db6;  
     background: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6);  
     background: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6); 
-    
-font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .card{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background: #4b6cb7;  
+display: flex;
+flex-direction: column;
+width: 100%;
+background: #4b6cb7;  
 background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  
 background: linear-gradient(to right, #182848, #4b6cb7); 
 border: 2px solid black;
 border-radius: 10px;
 overflow: hidden;
-
 }
 
 .card-title{
     display: flex;
     width: 100%;
-    
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-image: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=100");
     background-size: 100% 100%;
     background-blend-mode: overlay;
     background: #4b6cb7;
     font-weight: bold;
-
-    
 }
 
 #temp{
     font-size: 6vw;
 }
-
-
 
 .city{
     display: flex;
@@ -49,8 +40,6 @@ overflow: hidden;
     word-break: break-all;
     color: aliceblue;
     justify-content: space-between;
-
-
 }
 
 .weatherTomorrow{
@@ -62,46 +51,31 @@ overflow: hidden;
     border-radius: 7px;
     box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
     justify-content: space-evenly;
-
-    
 }
 
-
-
 .weather{
-
     display: flex;
     flex-direction: column;
         font-size: 3vw;
         color: aliceblue;
         align-items: center;
         justify-content: space-between;
-
-
 }
  #icon{
-
     display: block;
     width: 100%;
     object-fit: cover;
     height: 60%;
-    
-
-    
-}
+    }
 
 #icon:hover {
     opacity: 0.3;
   }
 
 #icon2{
-
     display: block;
     height: 50%;
-    
-
-    
-}
+      }
 
 
 .card-content{
@@ -112,8 +86,6 @@ font-size: 2vw;
 color: aliceblue;
 align-items: center;
 font-weight: bold;
-
-
 }
 
 .loading img{
@@ -129,7 +101,6 @@ font-weight: bold;
 
 .parent {
     display: grid;
-    
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
@@ -146,14 +117,11 @@ font-weight: bold;
         flex-direction: column;
         border-radius: 15px;
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
-
     }
 
     #button{
               margin-top: 5px;
               margin-bottom: 5px;
-
               box-shadow:inset 0px -3px 7px 0px #9fb4f2;
               background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
               background-color:#7892c2;
@@ -167,7 +135,6 @@ font-weight: bold;
               text-decoration:none;
               text-shadow:0px 1px 0px #283966;
               border-radius: 30px;
-
     }
 
     
@@ -205,8 +172,6 @@ font-weight: bold;
     }
 
     .inputForm{
-
-
         border: 2px solid blue;
   border-radius: 4px;
     }

@@ -6,7 +6,7 @@ var params = {
 
 }
 
-async function getweatherNow(city = "Bogota") {
+async function getweatherNow(city = "New york") {
 
     try {
         let data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ff26273dd44b20d6f5a756205c13e775`);
@@ -26,7 +26,7 @@ async function getweatherNow(city = "Bogota") {
 
 }
 
-async function getweatherTomorrow(city = "Bogota") {
+async function getweatherTomorrow(city = "New york") {
     try {
         let data = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=ff26273dd44b20d6f5a756205c13e775`);
         data = await data.json();
